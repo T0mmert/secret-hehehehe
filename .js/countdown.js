@@ -1,5 +1,5 @@
 // Set the anniversary date
-const anniversaryDate = new Date('2026-02-04T00:00:00');
+const anniversaryDate = new Date('2026-03-04T00:00:00');
 
 const countdownEl = document.getElementById('countdown');
 

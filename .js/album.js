@@ -14,7 +14,6 @@ function closeLightbox() {
   heartsContainer.innerHTML = '';
 }
 
-// Create floating hearts
 function createHearts() {
   for(let i=0; i<10; i++) {
     const heart = document.createElement('div');
@@ -27,7 +26,6 @@ function createHearts() {
   }
 }
 
-// Swipe support for mobile
 let startX = 0;
 
 lightboxImg.addEventListener('touchstart', e => {
