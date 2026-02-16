@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Album</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1 class="title">💖 Onze herinneringen💖</h1>
+
+<div class="gallery">
+  <img src="images/photo2.jpg" alt="Memory 2" onclick="openLightbox(this)">
+  <img src="images/photo3.jpg" alt="Memory 3" onclick="openLightbox(this)">
+  <img src="images/photo4.jpg" alt="Memory 4" onclick="openLightbox(this)">
+  <img src="images/photo5.jpg" alt="Memory 5" onclick="openLightbox(this)">
+  <img src="images/photo6.jpg" alt="Memory 6" onclick="openLightbox(this)">
+  <img src="images/photo7.jpg" alt="Memory 7" onclick="openLightbox(this)">
+  <img src="images/photo8.jpg" alt="Memory 8" onclick="openLightbox(this)">
+  <img src="images/photo9.jpg" alt="Memory 9" onclick="openLightbox(this)">
+  <img src="images/photo10.jpg" alt="Memory 10" onclick="openLightbox(this)">
+  <img src="images/photo11.jpg" alt="Memory 11" onclick="openLightbox(this)">
+  <img src="images/photo12.jpg" alt="Memory 12" onclick="openLightbox(this)">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <span id="closeBtn">&times;</span>
+  <img id="lightboxImg" src="" alt="">
+  <div id="heartsContainer"></div>
+</div>
+
+<script src=".js/album.js"></script>
+<script>
+const anniversaryDate = new Date('2026-02-04T00:00:00'); // your test date
+
+// Only redirect if today is before the anniversary
+if (new Date() < anniversaryDate && !window.location.href.includes('countdown.html')) {
+  window.location.href = 'countdown.html';
+}
+</script>
+
+
+</body>
+</html>
